@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.selection-zone {
+  background-image: url('moviesResources/pp.jpg');
+}
+
+section {
+  padding: 20px;
+}
+
+.filter-section {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-section a {
+background-color: #d86666;
+  border-radius: 100px;
+  border: 2px solid #d74949;
+  box-shadow: 
+  rgba(255, 0, 0, 0.4) 0 -25px 18px -14px inset,
+  rgba(128, 128, 128, 0.3) 0 1px 2px,
+  rgba(128, 128, 128, 0.3) 0 2px 4px,
+  rgba(128, 128, 128, 0.3) 0 4px 8px,
+  rgba(128, 128, 128, 0.3) 0 8px 16px,
+  rgba(128, 128, 128, 0.3) 0 16px 32px;
+
+   color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: poppins;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  font-size: 15px;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 160px;
+  height: 30px;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.filter-section a:hover {
+   transform: scale(1.05) rotate(-1deg);
+  box-shadow: rgba(245, 244, 229, 0.3) 0 -25px 18px -14px inset, 
+  rgba(245, 244, 229, 0.15) 0 1px 2px, 
+  rgba(245, 244, 229, 0.15) 0 2px 4px, 
+  rgba(245, 244, 229, 0.15) 0 4px 8px, 
+  rgba(245, 244, 229, 0.15) 0 8px 16px, 
+  rgba(245, 244, 229, 0.15) 0 16px 32px
+
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+}
+/**************CSS for Home and Logo****************/
+
+.home-link {
+  font-family: "poppins", sans-serif;
+  font-size: 24px; 
+  text-decoration: none;
+  color: #333;  
+}
+
+.logo{
+  color: whitesmoke;
+  font-size: 29px; 
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+}
+
+.logo-accent {
+  color: white; 
+  letter-spacing: 2px;
+  font-size: 34px;
+  font-family: 'monoton', sans-serif;
+}
+
+.glow {
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px rgba(204, 51, 51, 0.8),
+      0 0 15px rgba(204, 51, 51, 0.8),
+      0 0 20px rgba(204, 51, 51, 0.8),
+      0 0 25px rgba(204, 51, 51, 0.8),
+      0 0 30px rgba(204, 51, 51, 0.8),
+      0 0 35px rgba(204, 51, 51, 0.8),
+      0 0 40px rgba(204, 51, 51, 0.8);
+  }
+  to {
+    text-shadow:
+      0 0 10px rgba(255, 100, 100, 0.8),
+      0 0 15px rgba(255, 100, 100, 0.8),
+      0 0 25px rgba(255, 100, 100, 0.8),
+      0 0 30px rgba(255, 100, 100, 0.8),
+      0 0 35px rgba(255, 100, 100, 0.8),
+      0 0 40px rgba(255, 100, 100, 0.8),
+      0 0 45px rgba(255, 100, 100, 0.8);
+  }
+}
+
+/********************CSS_FOR_NAV***********************/
+nav {
+  background-image: url('moviesResources/moviesbg8.jpg');
+   background-position: center bottom;
+  color: pink;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.31);
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link box-icon {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  float: left;
+  border-radius: 50px;
+  background: rgb(59,59,59);
+  background: radial-gradient(circle, rgba(59,59,59,1) 0%, rgba(130,130,130,1) 90%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+
+}
+
+.nav-link:hover{
+  width: 220px;
+}
+
+.nav-link .library-text {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+/***************************************************/
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   background-image: url('moviesResources/moviesbg8.jpg');
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  color: #6a5e34;
+  perspective: 1000px;
+  margin: 30px;
+  width: 350px;
+  height: 450px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+
+.card-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(42,42,42);
+  background: linear-gradient(90deg, rgba(42,42,42,1) 0%, rgba(142,142,142,1) 50%, rgba(42,42,42,1) 100%);
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  background-color: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 0px 19px 3px #d40000 inset;
+  cursor: pointer;
+  color:#d40000;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card img {
+  width: 70%;
+  height: 74%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+/***************************************************/
+.search-section input[type="text"] {
+  width: 240px; 
+  height: 35px; 
+  border: 2px solid #d74949; 
+  color: #d74949;
+  border-radius: 20px; 
+  padding: 5px 10px; 
+  font-size: 16px; 
+  font-family: poppins; 
+  margin-right: 10px; 
+  padding-right: 30px;
+  background-color: #dbdbdb;
+}
+
+.search-section input[type="text"]::placeholder {
+  color: #d74949; 
+  padding-left: 10px;
+}
+
+.search-section input[type="text"]:focus { 
+  outline: none; 
+}
+
+.search-section input[type="text"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.search-section{
+  display: flex;
+  justify-content: center; 
+}
+
+.input-container {
+    position: relative;
+}
+
+#searchIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; 
+    font-size: 24px; 
+    cursor: pointer;
+  margin-right: 10px;
+  color:#ff7777;
+}
+/***************************************************/

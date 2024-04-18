@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Anime</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+  <link href="animestyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<section class="selection-zone">
+  <nav>
+    <a href="homepage.html" class="home-link">
+      <span class="logo glow">Entertainment</span>
+      <span class="logo-accent glow">EXPO</span>
+    </a>
+  </nav>
+
+  <section>
+    <div class="nav-links">
+      <a href="books.html" class="nav-link">
+        <box-icon name='book-open' color='#ffffff'></box-icon>
+        <span class="library-text">Books Library</span>
+      </a>
+      <a href="anime.html" class="nav-link">
+        <box-icon type='solid' name='cat' color='#ffffff'></box-icon>
+        <span class="library-text">Anime Library</span>
+      </a>
+      <a href="movies.html" class="nav-link">
+        <box-icon name='movie-play' color='#ffffff'></box-icon>
+        <span class="library-text">Movies Library</span>
+      </a>
+      <a href="games.html" class="nav-link">
+        <box-icon name='game' color='#ffffff'></box-icon>
+        <span class="library-text">Games Library</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="todistinguish">
+    </div>
+  </section>
+  <div class="navbar">
+    <div>
+    </div>
+
+    <section class="filter-section">
+      <button class="filter-btn" id="loadTopAnimeBtn">Top Anime</button>
+      <button class="filter-btn" id="loadCurrentBtn">Current</button>
+      <button class="filter-btn" id="loadUpcomingBtn">Upcoming</button>
+    </section>
+    <section class="filterbytype-section">
+      <button class="filter-btn" onclick="filterByType('TV')">TV Series</button>
+      <button class="filter-btn" onclick="filterByType('Movie')">Movies</button>
+    </section>
+
+    <section class="genre-section">
+      <a href="#" class="genre-item">Action</a>
+      <a href="#" class="genre-item">Adventure</a>
+      <a href="#" class="genre-item">Comedy</a>
+      <a href="#" class="genre-item">Drama</a>
+      <a href="#" class="genre-item">Fantasy</a>
+      <a href="#" class="genre-item">Romance</a>
+    </section>
+
+    <section class="search-section">
+      <section class="search-section">
+        <div class="input-container">
+          <input type="search" id="searchKey" placeholder="Search name">
+          <ion-icon class="search-btn" name="search-circle-outline" onclick="search()"></ion-icon>
+        </div>
+      </section>
+    </section>
+
+  </div>
+</section>
+
+<section>
+  <div>
+    <section id="container" class="card-container"></section>
+  </div>
+</section>
+
+<div id="modal" class="hidden">
+  <div class="modal-content" id="modal-content">
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="animeResources/animescript.js"></script>
+    </body>
+
+</html>

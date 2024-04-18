@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Games Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+  <link href="gamesstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section class="selection-zone">
+  <nav>
+    <a href="homepage.html" class="home-link">
+      <span class="logo glow">Entertainment</span>
+      <span class="logo-accent glow">EXPO</span>
+    </a>
+  </nav>
+  <section>
+    <div class="nav-links">
+      <a href="books.html" class="nav-link">
+        <box-icon name='book-open' color='#ffffff'></box-icon>
+        <span class="library-text">Books Library</span>
+      </a>
+      <a href="anime.html" class="nav-link">
+        <box-icon type='solid' name='cat' color='#ffffff'></box-icon>
+        <span class="library-text">Anime Library</span>
+      </a>
+      <a href="movies.html" class="nav-link">
+        <box-icon name='movie-play' color='#ffffff'></box-icon>
+        <span class="library-text">Movies Library</span>
+      </a>
+      <a href="games.html" class="nav-link">
+        <box-icon name='game' color='#ffffff'></box-icon>
+        <span class="library-text">Games Library</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="todistinguish">
+    </div>
+  </section>
+
+  <section class="genre-section">
+    <button onclick="filterByGenre('Shooter')">Shooter</button>
+    <button onclick="filterByGenre('MMORPG')">MMORPG</button>
+    <button onclick="filterByGenre('Strategy')">Strategy</button>
+    <button onclick="filterByGenre('Sports')">Sports</button>
+    <button onclick="filterByGenre('Fighting')">Fighting</button>
+    <button onclick="filterByGenre('MOBA')">MOBA</button>
+    <button onclick="filterByGenre('Card Game')">Card Game</button>
+    <button onclick="filterByGenre('MMO')">MMO</button>
+  </section>
+
+  <section class="sort-date"> 
+    <button onclick="sortByReleaseDate('asc')">Earliest</button>
+    <button onclick="sortByReleaseDate('desc')">Latest</button>
+  </section> 
+
+  <section>
+    <div class="sort-platforms">
+      <button onclick="filterByPlatform('PC')">PC </button>
+      <button onclick="filterByPlatform('Web')">Web </button>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <div class="input-container">
+        <input type="search" id="searchGame" placeholder="Search name">
+        <ion-icon id="searchIcon" name="search-circle-outline" onclick="search()"></ion-icon>
+    </div>
+  </section>
+
+
+  <div class="card-container" id="container">
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="gamesscript.js"></script>
+</body>
+</html>
+
+
+
+
+

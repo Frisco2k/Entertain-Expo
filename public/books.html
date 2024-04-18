@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <title>Book Gallery</title>
+    <link href="booksStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+        <section class="selection-zone">
+          <nav>
+            <a href="homepage.html" class="home-link">
+              <span class="logo glow">Entertainment</span>
+              <span class="logo-accent glow">EXPO</span>
+            </a>
+          </nav>
+          
+          <section>    
+        <div class="nav-links">
+          <a href="books.html" class="nav-link">
+            <box-icon name='book-open' color='#ffffff'></box-icon>
+            <span class="library-text">Books Library</span>
+          </a>
+          <a href="anime.html" class="nav-link">
+            <box-icon type='solid' name='cat' color='#ffffff'></box-icon>
+            <span class="library-text">Anime Library</span>
+          </a>
+          <a href="movies.html" class="nav-link">
+            <box-icon name='movie-play' color='#ffffff'></box-icon>
+            <span class="library-text">Movies Library</span>
+          </a>
+          <a href="games.html" class="nav-link">
+            <box-icon name='game' color='#ffffff'></box-icon>
+            <span class="library-text">Games Library</span>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="todistinguish">
+        </div>
+      </section>
+
+    <section class = "functions-section">
+
+      <button id="sort-by-rank">Sort by Rank</button>
+      <button id="sort-by-isbn">Sort by ISBN</button>
+      <button id="sort-by-author">Sort by Author</button>
+      <button id="sort-by-title">Sort by Title</button>
+       </section>
+
+      <section class="search-section">
+        <div class="input-container">
+            <input type="search" id="search-bar" placeholder="Search...">
+            <ion-icon id="searchIcon" name="search-circle-outline"</ion-icon>
+        </div>
+      </section>
+   
+
+      <div class ="background">
+    <div id="gallery-container"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script src="booksResources/books.js"></script>
+
+</body>
+</html>

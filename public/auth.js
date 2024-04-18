@@ -14,22 +14,22 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth();
 
-function setAuthListeners(onLogin, onLogout){
+function setAuthListeners(onLogin){
   onAuthStateChanged(auth, user => {
     if (user) {
       onLogin();
-    } else {
-      onLogout();
-    }
+    } 
   });
 }
 
 async function signIn(){
   try{
     await setPersistence(auth, browserLocalPersistence);
-    const user = await signInAnonymously(auth);
-  }catch(e){
+    const userCredential = await signInAnonymously(auth);
+    return userCredential.user; // Return the user object
+  } catch(e) {
     console.error(e);
+    return null; // Return null if there's an error
   }
 }
 
@@ -40,5 +40,6 @@ async function logout() {
     console.error('Error signing out', error);
   }
 }
+
 
 export {auth, setAuthListeners, signIn, logout};
