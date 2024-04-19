@@ -12,10 +12,10 @@ async function fetchDataAndDisplay() {
 
     try {
         const response = await fetch(url, options);
-        data = await response.json(); // Assign data globally
+        data = await response.json(); 
         if (Array.isArray(data)) {
             displayBooks(data);
-            // Set up event listeners after data is fetched
+           
             document.getElementById('search-bar').addEventListener('input', (event) => {
                 const searchTerm = event.target.value.trim();
                 const filteredBooks = searchBooks(data, searchTerm);
@@ -52,17 +52,16 @@ async function fetchDataAndDisplay() {
 
       function displayBooks(books) {
           const galleryContainer = document.getElementById('gallery-container');
-          galleryContainer.innerHTML = ''; // Clear previous books
+          galleryContainer.innerHTML = ''; 
 
           books.forEach(book => {
               const card = document.createElement('div');
               card.classList.add('card');
 
-              // Front face of the card
             const frontFace = document.createElement('div');
             frontFace.classList.add('card-front');
 
-            // Add image to front face
+            
             const image = document.createElement('img');
             image.src = book.bookImage;
             frontFace.appendChild(image);
@@ -71,9 +70,9 @@ async function fetchDataAndDisplay() {
             title.textContent = book.bookTitle;
             
               frontFace.appendChild(title);
-              // Add other content for front face as needed
+              
 
-              // Back face of the card
+              
             const backFace = document.createElement('div');
             backFace.classList.add('card-back');
 
@@ -97,16 +96,16 @@ async function fetchDataAndDisplay() {
             const bookRank = document.createElement('p');
             bookRank.textContent = 'Book Rank: ' + book.bookRank;
 
-            // Append elements to the back face container
+           
             backFace.appendChild(description);
             backFace.appendChild(author);
             backFace.appendChild(publisher);
             backFace.appendChild(amazonLink);
             backFace.appendChild(isbn);
             backFace.appendChild(bookRank);
-              // Add other content for back face as needed
+             
 
-              // Container for flipping animation
+             
               const cardInner = document.createElement('div');
               cardInner.classList.add('card-inner');
               cardInner.appendChild(frontFace);
@@ -116,7 +115,7 @@ async function fetchDataAndDisplay() {
 
               galleryContainer.appendChild(card);
 
-              // Event listener for flipping the card
+              
               card.addEventListener('click', function() {
                   card.classList.toggle('flipped');
               });

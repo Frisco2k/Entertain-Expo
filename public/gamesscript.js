@@ -77,10 +77,10 @@ async function search() {
 
 function sortByReleaseDate(order) {
   if (order === 'asc') {
-    // Sort the games array based on release_date (in ascending order)
+   
     gamesArr.sort((a, b) => new Date(a.release_date) - new Date(b.release_date));
   } else if (order === 'desc') {
-    // Sort the games array based on release_date (in descending order)
+    
     gamesArr.sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
   }
   renderGames(gamesArr);

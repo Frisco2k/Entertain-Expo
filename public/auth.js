@@ -26,10 +26,10 @@ async function signIn(){
   try{
     await setPersistence(auth, browserLocalPersistence);
     const userCredential = await signInAnonymously(auth);
-    return userCredential.user; // Return the user object
+    return userCredential.user; 
   } catch(e) {
     console.error(e);
-    return null; // Return null if there's an error
+    return null; 
   }
 }
 
